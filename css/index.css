@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    border: none;
+}
+
+.bi-list{
+    display: none;
+    background: #FB0102;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.btn-border{
+    transition: background-color 0.2s;
+    padding: 10px 25px;
+    border: 3px solid #fb0101;
+    background: #fb010157;
+    border-radius: 25px;
+    margin: 10px;
+    color: white;
+}
+
+.btn-border:hover{
+    background-color: #FB0102;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+
+
+/* Home and navbar */
+.home-and-navbar{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background-image: url(/img/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* navbar */
+
+.nav{
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #00000054;
+    padding-bottom: 30px;
+}
+
+.nav-logo-and-text{
+    display: flex;
+    padding: 10px;
+}
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/logo-2.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-logo-text h4{
+    color: #BBB;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 90;
+}
+
+.nav-phones{
+    display: flex;
+    align-items: center;
+}
+
+.nav-phone-logo{
+    background-color: #FB0102;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.nav-phone-text{
+    font-size: 20px;
+}
+
+#toggle{
+    cursor: pointer;
+    border: 3px solid #fb0101;
+    background-color: #fb010157;
+    border-radius: 25px;
+    height: 50px;
+    width: 80px;
+    position: relative;
+}
+
+#toggle-circle{
+    position: relative;
+    top: 13px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 10;
+}
+
+#toggle::after{
+    content: 'UZ';
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+    font-size: 12px;
+}
+
+#toggle::before{
+    content: 'УЗ';
+    position: absolute;
+    bottom: 16px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.toggle-circle-animation{
+    transform: translateX(38px);
+}
+
+/* Home */
+.home{
+    background-color: #00000054;
+    min-height: 90vh;
+    width: 100vw;
+    color: #d2d2d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    font-size: 25px;
+}
+
+.home div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-text{
+    color: #e2e2d2;
+    font-size: 35px;
+}
+
+.home-text h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#home-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#experiense-in-home{
+    margin: 50px;
+    color: white;
+    font-size: 60px;
+}
+
+
+/* Services */
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+.service{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.service div{
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+#service-1{
+    width: 50%;
+}
+
+.service-1::before{
+    content: "Реклама видео-роликлари";
+    position: absolute;
+    font-size: 50px;
+    color:white;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.10696778711484589) 0%, rgba(0,0,0,0.3982843137254902) 49%, rgba(0,0,0,0.529936974789916) 100%);
+}
+
+.service1::before{
+    content: "Reklama video-roliklari" !important ;
+}
+
+.service2::before{
+    content: "Oilaviy tantanalar" !important ;
+}
+
+.service3::before{
+    content: "Online translatsiya" !important ;
+}
+
+.service4::before{
+    content: "Tadbirlar syomkasi" !important ;
+}
+
+#service-2{
+    width: 50%;
+}
+
+.service-2::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "Оилавий тантаналар";
+    color:white;
+    font-size: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.10696778711484589) 0%, rgba(0,0,0,0.3982843137254902) 49%, rgba(0,0,0,0.529936974789916) 100%);
+}
+
+#service-3{
+    width: 50%;
+}
+
+.service-3::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "Онлайн трансляция";
+    color:white;
+    font-size: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.10696778711484589) 0%, rgba(0,0,0,0.3982843137254902) 49%, rgba(0,0,0,0.529936974789916) 100%);
+}
+
+#service-4{
+    width: 50%;
+}
+
+.service-4::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "Тадбирлар сёмкаси";
+    color:white;
+    font-size: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.10696778711484589) 0%, rgba(0,0,0,0.3982843137254902) 49%, rgba(0,0,0,0.529936974789916) 100%);
+}
+
+.service div img{
+    width: 100%;
+}
+
+/* About us */
+.about-us{
+    width: 100vw;
+    background: #000;
+    display: flex;
+    padding: 50px;
+    background-image: url(/img/section-3-img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ab-us-text-section{
+    padding: 20px;
+    width: 50vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.ab-us-complements{
+    display: flex;
+    flex-direction: row;
+}
+
+.ab-us-complement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.ab-us-complement img{
+    width: 50%;
+}
+
+.ab-us-complement h3, .about-us h3{
+    color: white;
+    font-size: 30px;
+}
+
+.ab-us-complement h5, .ab-us-text-section{
+    color: #ccc;
+    line-height: 3
+    0px;
+}
+
+.ab-us-text{
+    line-height: 25px;
+    margin: 20px;
+}
+
+h3.ab-us-text{
+    font-size: 40px;
+    align-self: center;
+}
+
+.ab-btn-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fb0101;
+    background-color: #ff2b2b65;
+    border: 2px solid #FB0102;
+    border-radius: 10px;
+    font-size: 30px;
+    width: 0;
+    height: 0;
+    padding: 30px;
+    margin: 20px;
+}
+
+.ab-btn-border:hover{
+    color: white;
+    background-color: #FB0102;
+}
+
+.telegram:hover{
+    background-color: #00a6ff;
+    border-color: #007cc0;
+}
+
+
+/*  ADD WORKS  */
+
+.add-works{
+    padding-top: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.add-works-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-works-card{
+    border-radius: 50px;
+    min-height: 50px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 250px;
+    padding-top: 50px;
+    background-color: #fb0101;
+    position: relative;
+    color: white;
+}
+
+.add-works-card div{
+    top: -170px;
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+}
+
+#card1{
+    background-image: url('/img/add-works-1.jpg');
+}
+
+#card2{
+    background-image: url('/img/add-works-2.jpg');
+}
+
+#card3{
+    background-image: url('/img/add-works-3.jpg');
+}
+
+#card4{
+    background-image: url('/img/add-works-4.jpg');
+}
+
+#card5{
+    background-image: url('/img/add-works-5.jpg');
+}
+
+
+
+/*  FOOTER  */
+
+footer{
+    border-top: 1px solid #aaa;
+    padding: 20px;
+    background-color: black;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer-card{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-cards-link{
+    min-width: 200px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-cards-link a{
+    color: #aaa;
+}
+
+.footer-phone-text{
+    font-size: 30px;
+}
+
+#telegram:hover{
+    color: #0068a1;
+}
+
+#instagram:hover{
+    color: #700081;
+}
+
+#faceebook:hover{
+    color: #002082;
+}
+
+#youtube:hover{
+    color: #720000;
+}
+
+
+
+
+/* Media */
+
+@media (max-width: 800px){
+    .nav, .nav-logo-and-text{
+        flex-direction: column;
+    }    
+
+    .nav-logo-and-text{
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .nav-logo{
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .bi-list{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: block;
+    }    
+
+    .nav-phones{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .nav-links{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70vw;
+        flex-direction: column;
+        background: #FB0102;
+    }
+
+    #nav-open{
+        display: block;
+        z-index: 100;
+    }
+
+    .home{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .home-text{
+        font-size: 18px;
+    }
+
+    #home-buttons{
+        flex-direction: column;
+    }   
+
+    #experiense-in-home{
+        font-size: 25px;
+    }    
+
+    .service{
+        flex-direction: column;
+    }
+
+    #service-1, #service-2, #service-3, #service-4{
+        width: 100%;
+    }
+
+    #service-1::before, #service-2::before, #service-3::before, #service-4::before{
+        font-size: 30px;
+    }
+
+    .about-us{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .ab-us-text-section{
+        width: 100%;
+        margin: 10px;
+    }
+
+    h3.ab-us-text{
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .ab-us-complements{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ab-us-complement{
+        min-height: 300px;
+    }
+
+    .ab-us-complement h3{
+        font-size: 20px;
+        margin: 2px;
+    }
+
+    .ab-us-complement h5{
+        font-size: 10px;
+    }
+
+    .ab-us-complement img{
+        height: 70px;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .add-work-text h3{
+        font-size: 18px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
