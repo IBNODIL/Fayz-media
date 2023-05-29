@@ -6,6 +6,34 @@ elToggle.addEventListener('click', function(){
   if(isChecked){
     isChecked = false; 
     elToggleCircle.classList.remove('toggle-circle-animation');
+    document.querySelector('.nav-logo-text h1').textContent='ФАЙЗ-МЕДИА';
+    document.querySelector('.nav-logo-text h4').textContent='ГРОУП';
+    document.getElementById('nav-link-a-1').textContent = 'Асосий';
+    document.getElementById('nav-link-a-2').textContent = 'Хизматлар';
+    document.getElementById('nav-link-a-3').textContent = 'Биз хақимизда';
+    document.getElementById('nav-link-a-4').textContent = `Қўшимча хизматлар`;
+    document.querySelector('.home-text h2').textContent = 'ФАЙЗ МЕДИА гроуб';
+    document.querySelector('.home-text h3').textContent = 'ФАЙЗЛИ ХОНАДОНИНГИЗ МЕХМОНИ';
+    document.querySelector('.home p').textContent = `Файз-медиа видеостудияси тўй ва тантаналарингизни энг юқори сифатда тасвирга олиб унутилмас онларингизни янада ёрқин ва гўзал бўлишини таъминлайди. Энг замонавий ускунлар, халқаро даржадаги сифат маҳсулотларимиз сизга манзўр бўлади. Ҳозир қўнғироқ қилинг ва 15 йиллик тўйимиз сабаб махсус чегирмага эга бўлинг.`;
+    document.querySelector('#h-btn-1').textContent = `Биз билан боғланинг`;
+    document.querySelector('#h-btn-2').textContent = `Бизни YouTube да кўринг `;
+    document.getElementById('experiense-in-home').textContent = `15 ЙИЛЛИК ТАЖРИБА`;
+    document.querySelector('#service-1').classList.remove('service1');
+    document.querySelector('#service-2').classList.remove('service2');
+    document.querySelector('#service-3').classList.remove('service3');
+    document.querySelector('#service-4').classList.remove('service4');
+    document.querySelector('h3.ab-us-text').textContent='СТУДИЯМИЗ ХАҚИДА';
+    document.querySelector('p.ab-us-text').textContent=`Бизнинг студиямиз Қўқонда - видео монтаж ва видео олиш студияси, яхши видео тармоқ тайёрлашни таклиф этади. Бизнинг профессионалларимиз клиплар, ижтимоий тармоқлар учун реклама, имидж филмлари, интернет дуконлари учун видео рекламалари, қисқа метражли филмлар таёрлашади. Бундан ташқари, биз онлайн трансляцияларни ташкил этамиз ва шахсий ва корпоратив тадбирлар учун видео оператор хизматларини таклиф этамиз.`;
+    document.getElementById('ab-us-com-text-1').textContent = 'ВИДЕО МОНТАЖ';
+    document.getElementById('ab-us-com-text-2').textContent = 'ХАР ҚАНДАЙ ҚИЙИНЛИГДАГИ';
+    document.getElementById('ab-us-com-text-3').textContent = 'ТАНИҚЛИЛИК';
+    document.getElementById('ab-us-com-text-4').textContent = 'YOUTUBE ГА ВИДЕО';
+    document.querySelector('.add-work-text h2').textContent=`ҚЎШИМЧА ХИЗМАТЛАР`;
+    document.getElementById('add-works-card-text-1').textContent= `САХНА БЕЗАКЛАРИ`;
+    document.getElementById('add-works-card-text-2').textContent= `ФОТО АЛЬБОМЛАР`;
+    document.getElementById('add-works-card-text-3').textContent= `АЭРО-СЙОМКА`;
+    document.getElementById('add-works-card-text-4').textContent= `ТАКЛИФНОМАЛАР`;
+    document.getElementById('add-works-card-text-5').textContent= `ВИЗИТКА`;
   } else{
     isChecked = true; 
     elToggleCircle.classList.add('toggle-circle-animation');
@@ -31,5 +59,11 @@ elToggle.addEventListener('click', function(){
     document.getElementById('ab-us-com-text-2').textContent = 'Xar qanday qiyinligdagi';
     document.getElementById('ab-us-com-text-3').textContent = 'Taniqlilik';
     document.getElementById('ab-us-com-text-4').textContent = 'YouTube ga video';
+    document.querySelector('.add-work-text h2').textContent=`Qo'shimcha xizmatlar`;
+    document.getElementById('add-works-card-text-1').textContent= `Saxna bezaklari`;
+    document.getElementById('add-works-card-text-2').textContent= `Foto albomlar`;
+    document.getElementById('add-works-card-text-3').textContent= `Aero-syomka`;
+    document.getElementById('add-works-card-text-4').textContent= `Taklifnomalar`;
+    document.getElementById('add-works-card-text-5').textContent= `Vizitka`;
   }
 });
